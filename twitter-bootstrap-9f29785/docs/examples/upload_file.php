@@ -1,9 +1,10 @@
 <?php
-$allowedExts = array("doc", "docx", "pdf", "xls", "xlsx");
+$allowedExts = array("doc", "docx", "pdf", "xls", "xlsx", "xml", "jpeg");
 $extension = end(explode(".", $_FILES["file"]["name"]));
 if ((($_FILES["file"]["type"] == "file/doc")
 || ($_FILES["file"]["type"] == "file/docx")
 || ($_FILES["file"]["type"] == "file/pdf")
+|| ($_FILES["file"]["type"] == "file/xlsx")
 || ($_FILES["file"]["type"] == "image/jpg"))
 && ($_FILES["file"]["size"] < 2000000) // 20MB
 && in_array($extension, $allowedExts))
