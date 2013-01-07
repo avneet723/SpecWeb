@@ -99,11 +99,24 @@
                   </ul>
                 </li>
 
-                <li class="active"><a href="ftp.html">FTP Upload</a></li>
+                <li class="active"><a href="ftp.html">Upload</a></li>
                 <li><a href="privacy.html">Privacy</a></li>
-                <li><a href="join.html">Join Us</a></li>
-
                 <li><a href="./contact-us.html">Contact Us</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <form class="navbar-search pull-right">
+                        <input type="text" class="span2" placeholder="Username">
+                        <input type="text" class="span2" placeholder="Password">
+                        <label class="checkbox">
+                          <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                        <button class="btn btn-large btn-primary" type="submit">Login</button>
+                    </form>
+                  </ul>
+                </li>
                 
               </ul>
             </div><!--/.nav-collapse -->
@@ -135,8 +148,8 @@
 
             <div class="control-group">
               <label class="control-label" for="inputEmail"><i class="icon-briefcase"></i> Company Name</label>
-              <div class="controls controls-row">
                 <input type="text" class="input-xxlarge" id="inputEmail" placeholder="Please enter your company info">
+              <div class="controls controls-row">
               </div>
             </div>
 
@@ -155,9 +168,12 @@
                     <i class="icon-file fileupload-exists"></i> <span class="fileupload-preview"></span>
                   </div>
                   <span class="btn btn-file">
-                    <span class="fileupload-new">Select file</span>
-                    <span class="fileupload-exists">Change</span>
-                    <input type="file" />
+                    <form action="../php/upload_file.php" method="post" enctype="multipart/form-data">
+                      <span class="fileupload-new">Select file</span>
+                      <span class="fileupload-exists">Change</span>
+                      <input type="file" name="file" id="file">
+                      <input type="submit" name="submit" value="Submit">
+                    </form>
                   </span>
                   <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
                 </div>
@@ -184,7 +200,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2012 Spec Translations, Inc.   All Rights Reserved &middot;   <a href="./contact-us.html">Contact Us</a> &middot; <a href="./privacy.html">Privacy</a> &middot; <a href="./terms.html">Terms</a> &middot; <a href="./disclaimer.html">Disclaimer</a></p>
+        <p>&copy; 2012 Spec Translations, Inc.   All Rights Reserved &middot;   <a href="./contact-us.html">Contact Us</a> &middot; <a href="./privacy.html">Privacy</a> &middot; <a href="./terms.html">Terms</a> &middot; <a href="./disclaimer.html">Disclaimer</a> &middot; <a href="mailto:info@spectranslations.com">Email Us</a></p>
       </footer>
 
     </div> <!-- /container -->
@@ -206,6 +222,14 @@
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
     <script src="../assets/js/bootstrap-fileupload.js"></script>
+
+    
+    <script type="text/javascript">
+      var conveythis_form_id = 250;
+      var conveythis_user_id = "55bdaa0fbcdd176d56ad0444511f9703";
+    </script>
+    <a href="http://translation-cloud.com/" id="conveythis_main_link">translation services</a>
+    <script type="text/javascript" src="http://conveythis.com/js/form.min.js"></script>
 
   </body>
 </html>

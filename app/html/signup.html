@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Contact-Us</title>
+    <title>Sign Up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -67,11 +67,11 @@
                   </ul>
                 </li>
 
-                <li><a href="ftp.html">FTP Upload</a></li>
+                <li><a href="ftp.html">Upload</a></li>
                 <li><a href="privacy.html">Privacy</a></li>
 
-                <li class="active"><a href="./contact-us.html">Contact Us</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+                <li class="active"><a href="signup.html">Sign Up</a></li>
 
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
@@ -86,7 +86,6 @@
                     </form>
                   </ul>
                 </li>
-                
               </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -98,45 +97,52 @@
       <div class="row">
 
         <div class="hero-unit">
-          <h2>Let's  Get In Touch!</h2>
-          <p class="tagline">Thank you for visiting our site. If you would like to get in touch with our translation team, simply fill out the form below.</p>
+          <h2>Create a new Spec Account </h2>
+          <p class="tagline">Your Spec Account is more than just an average account. Share, collaborate, schedule, store, organize, and chat with your translator to grow your business globally and locally. 
         </div>
 
         <section class="span6">
           
-          <form>
+          <form name="signup" method="POST" action="../php/signup_form_send.php">
 
             <div class="control-group">
-              <label class="control-label" for="inputEmail"><i class="icon-user"></i> Full Name</label>
+              <label class="control-label" for="user_name"><i class="icon-user"></i>  Username</label>
               <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="inputEmail" placeholder="Please enter your email">
+                <input type="text" class="input-xxlarge" id="user_name" placeholder="Please enter your email">
               </div>
             </div>
 
             <div class="control-group">
-              <label class="control-label" for="inputEmail"><i class="icon-envelope"></i> Email</label>
+              <label class="control-label" for="full_name"><i class="icon-user"></i> Full Name</label>
               <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="inputEmail" placeholder="you@yourdomain.com">
+                <input type="text" class="input-xxlarge" id="full_name" placeholder="Please enter your email">
               </div>
             </div>
 
             <div class="control-group">
-              <label class="control-label" for="inputEmail"><i class="icon-question-sign"></i> Subject</label>
+              <label class="control-label" for="email"><i class="icon-envelope"></i> Email</label>
               <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="inputEmail" placeholder="What's up?">
+                <input type="text" class="input-xxlarge" id="email" placeholder="you@yourdomain.com">
               </div>
             </div>
 
             <div class="control-group">
-              <label class="control-label" for="inputEmail"><i class="icon-pencil"></i> Message</label>
+              <label class="control-label" for="im_handle"><i class="icon-globe"></i> IM Handle</label>
               <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="inputEmail" placeholder="Please enter your message">
+                <input type="text" class="input-xxlarge" id="im_handle" placeholder="your_handle@your_messenger">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="phone_num"><i class="icon-comment"></i> Phone Number</label>
+              <div class="controls controls-row">
+                <input type="text" class="input-xxlarge" id="phone_num" placeholder="555-555-5555">
               </div>
             </div>
 
             <div class="control-group">
             <div class="controls">
-              <button type="submit" class="btn btn-success">Send Message</button>
+              <input type="submit" class="btn btn-success" value="Sign Up">
             </div>
 
           </form>
@@ -144,16 +150,23 @@
         </section>
         <section class="span6">
 
-          <div class="well">
-            <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Pinon+Street,+San+Marcos,+CA&amp;aq=0&amp;oq=Pinon+Street+San+Marco&amp;sll=37.269174,-119.306607&amp;sspn=11.793333,26.784668&amp;ie=UTF8&amp;hq=&amp;hnear=Pinon+St,+San+Marcos,+San+Diego,+California+92069&amp;t=m&amp;z=14&amp;iwloc=near&amp;output=embed"></iframe>
-            <p><br />
-                    <b>Our California Headquarters:</b><br />
-                    Spec Translations<br />
-                    980 Pinion Street<br />
-                    San Marcos, CA 92069<br />
-                    <a href="mailto:info@spectranslations.com">Email Us</a>
-            </p>
-          </div> <!-- end well **map -->
+           <div class="container-indented">
+
+              <form class="form-signin">
+                <br>
+                <br>
+                <span style="padding-left: 70px; display:block">
+                  <br> <h2>Already have an account?</h2>
+                  <input type="text" class="input-large" placeholder="Email address"><br>
+                  <input type="password" class="input-large" placeholder="Password">
+                  <label class="checkbox">
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                  <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+                </span>
+              </form>
+
+            </div> <!-- /container --> 
 
         </section>
 
@@ -185,7 +198,6 @@
     <script src="../assets/js/bootstrap-collapse.js"></script>
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
-
     
     <script type="text/javascript">
       var conveythis_form_id = 250;
