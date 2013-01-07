@@ -1,7 +1,7 @@
 SpecWeb
 =======
 
-Repo for website developer for Spec Translations.
+Repo for web-development for Spec Translations.
 
 Creating a gmail account to be used for all purposes. (spectranslations@gmail.com)
 ==========
