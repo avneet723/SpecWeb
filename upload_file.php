@@ -104,3 +104,11 @@ mail($email_to, $email_subject, $email_message, $headers);
 echo "Form successfully submitted."; 
 ?>
  
+<!-- place your own success html below -->
+ 
+Thank you for contacting us. We will be in touch with you very soon.
+ 
+<?php
+}
+die();
+?>
