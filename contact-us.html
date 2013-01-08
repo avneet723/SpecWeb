@@ -2,52 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Upload Files</title>
+    <title>Contact-Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <style>
       body {
-        padding-top: 20px;
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
         padding-bottom: 40px;
       }
-
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 700px;
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
-
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 60px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 72px;
-        line-height: 1;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
     </style>
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="../assets/css/bootstrap-fileupload.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -55,11 +23,11 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="./assets/ico/favicon.png">
   </head>
 
   <body>
@@ -72,11 +40,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="../index.html"><font face='Arial' color='green'></font>Spec Translations</a>
+          <a class="brand" href="./index.html"><font face='Arial' color='green'></font>Spec Translations</a>
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
 
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                 <li class="dropdown">
@@ -99,9 +67,10 @@
                   </ul>
                 </li>
 
-                <li class="active"><a href="ftp.html">Upload</a></li>
+                <li><a href="ftp.html">Upload</a></li>
                 <li><a href="privacy.html">Privacy</a></li>
-                <li><a href="./contact-us.html">Contact Us</a></li>
+
+                <li class="active"><a href="./contact-us.html">Contact Us</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
 
                 <li class="dropdown">
@@ -124,32 +93,23 @@
       </div>
     </div>
 
-    <div class="container-narrow">
+    <div class="container">
 
-      <hr>
+      <div class="row">
 
-      <div class="jumbotron">
-        <h2>Upload your files!</h2>
-        <p class="lead">If you have already received a quote or you are a returning member, please fill out the form below and upload your files.</p>
-        <a class="btn btn-large btn-success" href="#form">Get Started!</a>
-      </div>
+        <div class="hero-unit">
+          <h2>Let's  Get In Touch!</h2>
+          <p class="tagline">Thank you for visiting our site. If you would like to get in touch with our translation team, simply fill out the form below.</p>
+        </div>
 
-      <hr>
-
-      <div class="row-fluid marketing" id="form">
-        <form>
+        <section class="span6">
+          
+          <form method="POST" action="./contactus_form_send.php">
 
             <div class="control-group">
               <label class="control-label" for="full_name"><i class="icon-user"></i> Full Name</label>
               <div class="controls controls-row">
                 <input type="text" class="input-xxlarge" id="full_name" placeholder="Please enter your email">
-              </div>
-            </div>
-
-            <div class="control-group">
-              <label class="control-label" for="company_name"><i class="icon-briefcase"></i> Company Name</label>
-                <input type="text" class="input-xxlarge" id="company_name" placeholder="Please enter your company info">
-              <div class="controls controls-row">
               </div>
             </div>
 
@@ -161,38 +121,42 @@
             </div>
 
             <div class="control-group">
-              <label class="control-label" for="upload"><i class="icon-upload"></i> Upload</label>
-              <div class="fileupload fileupload-new" data-provides="fileupload" >
-                <div class="input-append">
-                  <div class="uneditable-input span5">
-                    <i class="icon-file fileupload-exists"></i> <span class="fileupload-preview"></span>
-                  </div>
-                  <span class="btn btn-file">
-                    <form action="../php/upload_file.php" method="post" enctype="multipart/form-data">
-                      <span class="fileupload-new">Select file</span>
-                      <span class="fileupload-exists">Change</span>
-                      <input type="file" name="file" id="file">
-                      <input type="submit" name="submit" value="Submit">
-                    </form>
-                  </span>
-                  <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
-                </div>
+              <label class="control-label" for="subject"><i class="icon-question-sign"></i> Subject</label>
+              <div class="controls controls-row">
+                <input type="text" class="input-xxlarge" id="subject" placeholder="What's up?">
               </div>
             </div>
 
             <div class="control-group">
-              <label class="control-label" for="notes"><i class="icon-pencil"></i> Notes and Instructions</label>
+              <label class="control-label" for="message"><i class="icon-pencil"></i> Message</label>
               <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="notes" placeholder="Please enter your message">
+                <input type="text" class="input-xxlarge" id="message" placeholder="Please enter your message">
               </div>
             </div>
 
             <div class="control-group">
             <div class="controls">
-              <button type="submit" class="btn btn-success">Submit</button>
+              <input type="submit" class="btn btn-success" value="Send Message">
             </div>
 
           </form>
+
+        </section>
+        <section class="span6">
+
+          <div class="well">
+            <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Pinon+Street,+San+Marcos,+CA&amp;aq=0&amp;oq=Pinon+Street+San+Marco&amp;sll=37.269174,-119.306607&amp;sspn=11.793333,26.784668&amp;ie=UTF8&amp;hq=&amp;hnear=Pinon+St,+San+Marcos,+San+Diego,+California+92069&amp;t=m&amp;z=14&amp;iwloc=near&amp;output=embed"></iframe>
+            <p><br />
+                    <b>Our California Headquarters:</b><br />
+                    Spec Translations<br />
+                    980 Pinion Street<br />
+                    San Marcos, CA 92069<br />
+                    <a href="mailto:info@spectranslations.com">Email Us</a>
+            </p>
+          </div> <!-- end well **map -->
+
+        </section>
+
       </div>
 
       <hr>
@@ -208,20 +172,19 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
-    <script src="../assets/js/bootstrap-fileupload.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootstrap-transition.js"></script>
+    <script src="./assets/js/bootstrap-alert.js"></script>
+    <script src="./assets/js/bootstrap-modal.js"></script>
+    <script src="./assets/js/bootstrap-dropdown.js"></script>
+    <script src="./assets/js/bootstrap-scrollspy.js"></script>
+    <script src="./assets/js/bootstrap-tab.js"></script>
+    <script src="./assets/js/bootstrap-tooltip.js"></script>
+    <script src="./assets/js/bootstrap-popover.js"></script>
+    <script src="./assets/js/bootstrap-button.js"></script>
+    <script src="./assets/js/bootstrap-collapse.js"></script>
+    <script src="./assets/js/bootstrap-carousel.js"></script>
+    <script src="./assets/js/bootstrap-typeahead.js"></script>
 
     
     <script type="text/javascript">
