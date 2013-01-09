@@ -105,13 +105,11 @@
           <div id="Form1">
           <form name="signup" method="post" action="signup_form_send.php">
             <table>
-            <div class="control-group">
               <label class="control-label" for="user_name"><i class="icon-user"></i>  Username</label>
               <div class="controls controls-row">
                 <input type="text" class="input-xxlarge" id="user_name" placeholder="Please enter your email">
               </div>
-            </div>
-
+            
             <div class="control-group">
               <label class="control-label" for="full_name"><i class="icon-user"></i> Full Name</label>
               <div class="controls controls-row">
