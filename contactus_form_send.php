@@ -1,6 +1,11 @@
 <?php
-if(isset($_POST['email'])) {
+
+echo "PHP script initiated\n\n";
+
+if(isset($_POST['email']) || $_POST['full_name'])) {
      
+    echo "Got inside if statement\n\n";
+
     // CHANGE THE TWO LINES BELOW
     $email_to = "spectranslations@gmail.com";
      
@@ -68,5 +73,6 @@ Thank you for contacting us. We will be in touch with you very soon.
  
 <?php
 }
+echo "Died\n";
 die();
 ?>
