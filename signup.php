@@ -105,7 +105,6 @@
           
           <form name="signup" method="post" action="signup_form_send.php">
             <fieldset>
-
             <div class="control-group">
               <label class="control-label" for="user_name"><i class="icon-user"></i>  Username</label>
               <div class="controls controls-row">
@@ -140,7 +139,6 @@
                 <input type="text" class="input-xxlarge" id="phone_num" placeholder="555-555-5555">
               </div>
             </div>
-
             <div class="control-group">
             <div class="controls">
               <input type="submit" class="btn btn-success" value="Sign Up">
