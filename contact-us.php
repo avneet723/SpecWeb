@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -70,7 +70,7 @@
                 <li><a href="ftp.html">Upload</a></li>
                 <li><a href="privacy.html">Privacy</a></li>
 
-                <li class="active"><a href="./contact-us.html">Contact Us</a></li>
+                <li class="active"><a href="./contact-us.php">Contact Us</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
 
                 <li class="dropdown">
@@ -164,7 +164,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2012 Spec Translations, Inc.   All Rights Reserved &middot;   <a href="./contact-us.html">Contact Us</a> &middot; <a href="./privacy.html">Privacy</a> &middot; <a href="./terms.html">Terms</a> &middot; <a href="./disclaimer.html">Disclaimer</a> &middot; <a href="mailto:info@spectranslations.com">Email Us</a></p>
+        <p>&copy; 2012 Spec Translations, Inc.   All Rights Reserved &middot;   <a href="./contact-us.php">Contact Us</a> &middot; <a href="./privacy.html">Privacy</a> &middot; <a href="./terms.html">Terms</a> &middot; <a href="./disclaimer.html">Disclaimer</a> &middot; <a href="mailto:info@spectranslations.com">Email Us</a></p>
       </footer>
 
     </div> <!-- /container -->

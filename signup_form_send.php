@@ -1,8 +1,10 @@
 <?php
 
-echo "PHP script initiated";
+echo "PHP script initiated\n";
 
 if(isset($_POST['email'])) {
+
+  echo "Got inside if statement\n";
      
     // CHANGE THE TWO LINES BELOW
     $email_to = "spectranslations@gmail.com";
@@ -79,5 +81,6 @@ Thank you for contacting us. We will be in touch with you very soon.
  
 <?php
 }
+echo "Died\n";
 die();
 ?>
