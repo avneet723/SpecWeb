@@ -102,7 +102,7 @@
         </div>
 
         <section class="span6">
-          
+          <div id="Form1">
           <form name="signup" method="post" action="signup_form_send.php">
             <fieldset>
             <div class="control-group">
@@ -145,7 +145,7 @@
             </div>
             </fieldset>
           </form>
-
+        </div>
         </section>
         <section class="span6">
 
@@ -164,6 +164,7 @@
                   <button class="btn btn-large btn-primary" type="submit">Sign in</button>
                 </span>
               </form>
+
 
             </div> <!-- /container --> 
 
