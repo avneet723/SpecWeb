@@ -2,7 +2,7 @@
 
 echo "PHP script initiated\n";
 
-if(isset($_POST['email'])) {
+if(isset($_POST['user_name'])) {
 
   echo "Got inside if statement\n";
      

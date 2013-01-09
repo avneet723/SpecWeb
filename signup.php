@@ -107,9 +107,13 @@
             <table>
             <tr>
             <div class="control-group">
+              <td>
               <label class="control-label" for="user_name"><i class="icon-user"></i>  Username</label>
+              </td>
               <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="user_name" placeholder="Please enter your email">
+                <td>
+                <input type="text" class="input-xxlarge" id="user_name" placeholder="Please enter your username">
+                </td>
               </div>
             </div>
             </tr>
