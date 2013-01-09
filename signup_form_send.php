@@ -81,6 +81,6 @@ Thank you for contacting us. We will be in touch with you very soon.
  
 <?php
 }
-echo $_POST['email'];
+echo ".." + $_POST['email'] + "..empty";
 die();
 ?>
