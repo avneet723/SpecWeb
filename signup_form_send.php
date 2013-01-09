@@ -1,8 +1,8 @@
 <?php
 
-echo "PHP script initiated"
+echo "PHP script initiated";
 
-if(isset($_POST['email']) && isset($_POST['username'])) {
+if(isset($_POST['email'])) {
      
     // CHANGE THE TWO LINES BELOW
     $email_to = "spectranslations@gmail.com";
@@ -63,7 +63,7 @@ if(isset($_POST['email']) && isset($_POST['username'])) {
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
     $email_message .= "IM Handle: ".clean_string($im_handle)."\n";
      
-     echo "Email ready to be sent."
+     echo "Email ready to be sent.";
      
 // create email headers
 $headers = 'From: '.$email_from."\r\n".

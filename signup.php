@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -71,7 +71,7 @@
                 <li><a href="privacy.html">Privacy</a></li>
 
                 <li><a href="./contact-us.html">Contact Us</a></li>
-                <li class="active"><a href="signup.html">Sign Up</a></li>
+                <li class="active"><a href="signup.php">Sign Up</a></li>
 
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
@@ -103,7 +103,7 @@
 
         <section class="span6">
           
-          <form name="signup" method="post" action="./signup_form_send.php">
+          <form name="signup" method="post" action="signup_form_send.php">
 
             <div class="control-group">
               <label class="control-label" for="user_name"><i class="icon-user"></i>  Username</label>
