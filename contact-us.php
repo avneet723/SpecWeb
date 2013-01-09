@@ -77,12 +77,14 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <form class="navbar-search pull-right">
+                      <fieldset>
                         <input type="text" class="span2" placeholder="Username">
                         <input type="text" class="span2" placeholder="Password">
                         <label class="checkbox">
                           <input type="checkbox" value="remember-me"> Remember me
                         </label>
                         <button class="btn btn-large btn-primary" type="submit">Login</button>
+                        </fieldset>
                     </form>
                   </ul>
                 </li>

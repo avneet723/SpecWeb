@@ -104,6 +104,7 @@
         <section class="span6">
           
           <form name="signup" method="post" action="signup_form_send.php">
+            <fieldset>
 
             <div class="control-group">
               <label class="control-label" for="user_name"><i class="icon-user"></i>  Username</label>
@@ -144,7 +145,7 @@
             <div class="controls">
               <input type="submit" class="btn btn-success" value="Sign Up">
             </div>
-
+            </fieldset>
           </form>
 
         </section>
