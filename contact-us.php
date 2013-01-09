@@ -107,7 +107,7 @@
         <section class="span6">
           
           <form method="post" action="./contactus_form_send.php">
-
+            <fieldset>
             <div class="control-group">
               <label class="control-label" for="full_name"><i class="icon-user"></i> Full Name</label>
               <div class="controls controls-row">
@@ -140,7 +140,7 @@
             <div class="controls">
               <input type="submit" class="btn btn-success" value="Send Message">
             </div>
-
+            </fieldset>
           </form>
 
         </section>
