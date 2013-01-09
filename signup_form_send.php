@@ -1,4 +1,7 @@
 <?php
+
+echo "PHP script initiated"
+
 if(isset($_POST['email']) && isset($_POST['username'])) {
      
     // CHANGE THE TWO LINES BELOW
