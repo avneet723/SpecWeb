@@ -1,6 +1,6 @@
 <?php
 
-echo "PHP script initiated\n";
+echo "PHP script initiated\n\n";
 
 if(isset($_POST['user_name'])) {
 
@@ -75,12 +75,11 @@ $headers = 'From: '.$email_from."\r\n".
 echo "Form successfully submitted."; 
 ?>
  
-<!-- place your own success html below -->
- 
 Thank you for contacting us. We will be in touch with you very soon.
  
 <?php
 }
 
+echo "PHP Died\n\n";
 die();
 ?>

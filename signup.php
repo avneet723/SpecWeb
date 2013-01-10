@@ -76,14 +76,14 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <!-- <form class="navbar-search pull-right">
+                    <form class="navbar-search pull-right">
                         <input type="text" class="span2" placeholder="Username">
                         <input type="text" class="span2" placeholder="Password">
                         <label class="checkbox">
                           <input type="checkbox" value="remember-me"> Remember me
                         </label>
                         <button class="btn btn-large btn-primary" type="submit">Login</button>
-                    </form> -->
+                    </form>
                   </ul>
                 </li>
               </ul>
@@ -103,38 +103,38 @@
 
         <section class="span6">
           
-          <form id="signup" name="signup" method="post" action="signup_form_send.php">
+          <form name="signup" method="post" action="signup_form_send.php">
             <fieldset>
               <div class="control-group">
-                <label class="control-label" for="user_name"><i class="icon-user"></i>  Username*</label>
+                <label class="control-label" id="user_name"><i class="icon-user"></i>  Username*</label>
                 <div class="controls controls-row">
                   <input type="text" class="input-xxlarge" id="user_name" placeholder="Please enter your email">
                 </div>
               </div>
 
               <div class="control-group">
-                <label class="control-label" for="full_name"><i class="icon-user"></i> Full Name*</label>
+                <label class="control-label" id="full_name"><i class="icon-user"></i> Full Name*</label>
                 <div class="controls controls-row">
                   <input type="text" class="input-xxlarge" id="full_name" placeholder="Please enter your email">
                 </div>
               </div>
 
               <div class="control-group">
-                <label class="control-label" for="email"><i class="icon-envelope"></i> Email*</label>
+                <label class="control-label" id="email"><i class="icon-envelope"></i> Email*</label>
                 <div class="controls controls-row">
                   <input type="text" class="input-xxlarge" id="email" placeholder="you@yourdomain.com">
                 </div>
               </div>
 
               <div class="control-group">
-                <label class="control-label" for="im_handle"><i class="icon-globe"></i> IM Handle</label>
+                <label class="control-label" id="im_handle"><i class="icon-globe"></i> IM Handle</label>
                 <div class="controls controls-row">
                   <input type="text" class="input-xxlarge" id="im_handle" placeholder="your_handle@your_messenger">
                 </div>
               </div>
 
               <div class="control-group">
-                <label class="control-label" for="phone_num"><i class="icon-comment"></i> Phone Number</label>
+                <label class="control-label" id="phone_num"><i class="icon-comment"></i> Phone Number</label>
                 <div class="controls controls-row">
                   <input type="text" class="input-xxlarge" id="phone_num" placeholder="555-555-5555">
                 </div>
@@ -152,7 +152,6 @@
 
            <div class="container-indented">
 
-            <!--
               <form class="form-signin">
                 <br>
                 <br>
@@ -166,7 +165,6 @@
                   <button class="btn btn-large btn-primary" type="submit">Sign in</button>
                 </span>
               </form>
-            -->
 
             </div> <!-- /container --> 
 
