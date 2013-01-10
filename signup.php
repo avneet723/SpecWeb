@@ -153,6 +153,7 @@
 
            <div class="container-indented">
 
+            <!--
               <form class="form-signin">
                 <br>
                 <br>
@@ -166,6 +167,7 @@
                   <button class="btn btn-large btn-primary" type="submit">Sign in</button>
                 </span>
               </form>
+            -->
 
             </div> <!-- /container --> 
 
