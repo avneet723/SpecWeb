@@ -76,14 +76,14 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <form class="navbar-search pull-right">
+                    <!-- <form class="navbar-search pull-right">
                         <input type="text" class="span2" placeholder="Username">
                         <input type="text" class="span2" placeholder="Password">
                         <label class="checkbox">
                           <input type="checkbox" value="remember-me"> Remember me
                         </label>
                         <button class="btn btn-large btn-primary" type="submit">Login</button>
-                    </form>
+                    </form> -->
                   </ul>
                 </li>
               </ul>
@@ -141,9 +141,9 @@
               </div>
 
               <div class="control-group">
-              <!--<div class="controls">-->
+              <div class="controls">
                 <input type="submit" class="btn btn-success" value="Sign Up">
-              <!--</div>-->
+              </div>
             </fieldset>
           </form>
 
