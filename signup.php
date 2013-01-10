@@ -103,48 +103,47 @@
 
         <section class="span6">
           
-          <form name="signup" method="post" action="signup_form_send.php">
+          <form id="signup" name="signup" method="post" action="signup_form_send.php">
             <fieldset>
-
-            <div class="control-group">
-              <label class="control-label" for="user_name"><i class="icon-user"></i>  Username*</label>
-              <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="user_name" placeholder="Please enter your email">
+              <div class="control-group">
+                <label class="control-label" for="user_name"><i class="icon-user"></i>  Username*</label>
+                <div class="controls controls-row">
+                  <input type="text" class="input-xxlarge" id="user_name" placeholder="Please enter your email">
+                </div>
               </div>
-            </div>
 
-            <div class="control-group">
-              <label class="control-label" for="full_name"><i class="icon-user"></i> Full Name*</label>
-              <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="full_name" placeholder="Please enter your email">
+              <div class="control-group">
+                <label class="control-label" for="full_name"><i class="icon-user"></i> Full Name*</label>
+                <div class="controls controls-row">
+                  <input type="text" class="input-xxlarge" id="full_name" placeholder="Please enter your email">
+                </div>
               </div>
-            </div>
 
-            <div class="control-group">
-              <label class="control-label" for="email"><i class="icon-envelope"></i> Email*</label>
-              <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="email" placeholder="you@yourdomain.com">
+              <div class="control-group">
+                <label class="control-label" for="email"><i class="icon-envelope"></i> Email*</label>
+                <div class="controls controls-row">
+                  <input type="text" class="input-xxlarge" id="email" placeholder="you@yourdomain.com">
+                </div>
               </div>
-            </div>
 
-            <div class="control-group">
-              <label class="control-label" for="im_handle"><i class="icon-globe"></i> IM Handle</label>
-              <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="im_handle" placeholder="your_handle@your_messenger">
+              <div class="control-group">
+                <label class="control-label" for="im_handle"><i class="icon-globe"></i> IM Handle</label>
+                <div class="controls controls-row">
+                  <input type="text" class="input-xxlarge" id="im_handle" placeholder="your_handle@your_messenger">
+                </div>
               </div>
-            </div>
 
-            <div class="control-group">
-              <label class="control-label" for="phone_num"><i class="icon-comment"></i> Phone Number</label>
-              <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="phone_num" placeholder="555-555-5555">
+              <div class="control-group">
+                <label class="control-label" for="phone_num"><i class="icon-comment"></i> Phone Number</label>
+                <div class="controls controls-row">
+                  <input type="text" class="input-xxlarge" id="phone_num" placeholder="555-555-5555">
+                </div>
               </div>
-            </div>
 
-            <div class="control-group">
-            <div class="controls">
-              <input type="submit" value="Sign Up">
-            </div>
+              <div class="control-group">
+              <!--<div class="controls">-->
+                <input type="submit" class="btn btn-success" value="Sign Up">
+              <!--</div>-->
             </fieldset>
           </form>
 
