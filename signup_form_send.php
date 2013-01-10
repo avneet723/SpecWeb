@@ -2,7 +2,7 @@
 
 echo "PHP script initiated\n";
 
-//if(isset($_POST['user_name'])) {
+if(isset($_POST['user_name'])) {
 
   echo "Got inside if statement\n";
      
@@ -80,8 +80,7 @@ echo "Form successfully submitted.";
 Thank you for contacting us. We will be in touch with you very soon.
  
 <?php
-//}
-echo $email_from; echo " empty";
+}
 
 die();
 ?>
