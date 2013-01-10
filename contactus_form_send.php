@@ -1,10 +1,6 @@
 <?php
 
-echo "PHP script initiated\n\n";
-
-if(isset($_POST['email']) || $_POST['full_name'])) {
-     
-    echo "Got inside if statement\n\n";
+if(isset($_POST['email'])) {
 
     // CHANGE THE TWO LINES BELOW
     $email_to = "spectranslations@gmail.com";
@@ -67,12 +63,18 @@ $headers = 'From: '.$email_from."\r\n".
 echo "Form successfully submitted."; 
 ?>
  
-<!-- place your own success html below -->
- 
-Thank you for contacting us. We will be in touch with you very soon.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Your Page Title</title>
+<meta http-equiv="REFRESH" content="0;url=./formsubmitted.php"></HEAD>
+<BODY>
+Optional page text here.
+</BODY>
+</HTML>
+
  
 <?php
 }
-echo "Died\n";
 die();
 ?>

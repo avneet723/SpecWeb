@@ -1,11 +1,7 @@
 <?php
 
-echo "PHP script initiated\n\n";
-
 if(isset($_POST['user_name'])) {
 
-  echo "Got inside if statement\n";
-     
     // CHANGE THE TWO LINES BELOW
     $email_to = "spectranslations@gmail.com";
      
@@ -64,8 +60,7 @@ if(isset($_POST['user_name'])) {
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
     $email_message .= "IM Handle: ".clean_string($im_handle)."\n";
-     
-     echo "Email ready to be sent.";
+  
      
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
@@ -75,11 +70,17 @@ $headers = 'From: '.$email_from."\r\n".
 echo "Form successfully submitted."; 
 ?>
  
-Thank you for contacting us. We will be in touch with you very soon.
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Your Page Title</title>
+<meta http-equiv="REFRESH" content="0;url=./formsubmitted.php"></HEAD>
+<BODY>
+Optional page text here.
+</BODY>
+</HTML>
  
 <?php
 }
-
-echo "PHP Died\n\n";
 die();
 ?>
