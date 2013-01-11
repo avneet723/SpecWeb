@@ -71,7 +71,7 @@
                 <li><a href="privacy.html">Privacy</a></li>
 
                 <li class="active"><a href="./contact-us.php">Contact Us</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="signup.php">Sign Up</a></li>
 
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
