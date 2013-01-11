@@ -138,7 +138,7 @@
 
       <div class="row-fluid marketing" id="form">
         <form name="upload" method="post" action="upload_file.php">
-
+          <fieldset>
             <div class="control-group">
               <label class="control-label" for="full_name"><i class="icon-user"></i> Full Name</label>
               <div class="controls controls-row">
@@ -168,12 +168,12 @@
                     <i class="icon-file fileupload-exists"></i> <span class="fileupload-preview"></span>
                   </div>
                   <span class="btn btn-file">
-                    <form action="upload_file.php" method="post" enctype="multipart/form-data">
+                    <!--<form action="upload_file.php" method="post" enctype="multipart/form-data">-->
                       <span class="fileupload-new">Select file</span>
                       <span class="fileupload-exists">Change</span>
                       <input name="file" type="file" name="file" id="file">
-                      <input name="submit" type="submit" name="submit" value="Submit">
-                    </form>
+                      <input name="submit-file" type="submit" value="Submit">
+                    <!--</form>-->
                   </span>
                   <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
                 </div>
@@ -191,8 +191,8 @@
             <div class="controls">
               <button name="submit" type="submit" class="btn btn-success">Submit</button>
             </div>
-
-          </form>
+          </fieldset>
+        </form>
       </div>
 
       <hr>
