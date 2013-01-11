@@ -67,16 +67,18 @@ $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers); 
-echo "Form successfully submitted."; 
+echo "Your request has been successfully submitted. We will get back to you soon!\r\n";
+echo "You will now be redirected to the home page."
 ?>
  
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
 <title>Your Page Title</title>
-<meta http-equiv="REFRESH" content="0;url=http://spectranslation.azurewebsites.net/"></HEAD>
+<meta http-equiv="REFRESH" content="5;url=http://spectranslation.azurewebsites.net/"></HEAD>
 <BODY>
-Optional page text here.
+Your request has been successfully submitted. We will get back to you soon! <br><br>
+You will now be redirected to the home page.
 </BODY>
 </HTML>
  
