@@ -104,10 +104,16 @@ mail($email_to, $email_subject, $email_message, $headers);
 echo "Form successfully submitted."; 
 ?>
  
-<!-- place your own success html below -->
- 
-Thank you for contacting us. We will be in touch with you very soon.
- 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>File Submitted</title>
+<meta http-equiv="REFRESH" content="5;url=http://spectranslation.azurewebsites.net/"></HEAD>
+<BODY>
+Your file has been successfully submitted. We will get back to you soon! <br><br>
+You will now be redirected to the home page.
+</BODY>
+</HTML>
 <?php
 }
 die();

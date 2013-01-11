@@ -142,13 +142,13 @@
             <div class="control-group">
               <label class="control-label" for="full_name"><i class="icon-user"></i> Full Name</label>
               <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="full_name" placeholder="Please enter your email">
+                <input name="full_name" type="text" class="input-xxlarge" id="full_name" placeholder="Please enter your email">
               </div>
             </div>
 
             <div class="control-group">
               <label class="control-label" for="company_name"><i class="icon-briefcase"></i> Company Name</label>
-                <input type="text" class="input-xxlarge" id="company_name" placeholder="Please enter your company info">
+                <input name="company_name" type="text" class="input-xxlarge" id="company_name" placeholder="Please enter your company info">
               <div class="controls controls-row">
               </div>
             </div>
@@ -156,7 +156,7 @@
             <div class="control-group">
               <label class="control-label" for="email"><i class="icon-envelope"></i> Email</label>
               <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="email" placeholder="you@yourdomain.com">
+                <input name="email" type="text" class="input-xxlarge" id="email" placeholder="you@yourdomain.com">
               </div>
             </div>
 
@@ -171,8 +171,8 @@
                     <form action="./upload_file.php" method="post" enctype="multipart/form-data">
                       <span class="fileupload-new">Select file</span>
                       <span class="fileupload-exists">Change</span>
-                      <input type="file" name="file" id="file">
-                      <input type="submit" name="submit" value="Submit">
+                      <input name="file" type="file" name="file" id="file">
+                      <input name="submit" type="submit" name="submit" value="Submit">
                     </form>
                   </span>
                   <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
@@ -183,13 +183,13 @@
             <div class="control-group">
               <label class="control-label" for="notes"><i class="icon-pencil"></i> Notes and Instructions</label>
               <div class="controls controls-row">
-                <input type="text" class="input-xxlarge" id="notes" placeholder="Please enter your message">
+                <input name="notes" type="text" class="input-xxlarge" id="notes" placeholder="Please enter your message">
               </div>
             </div>
 
             <div class="control-group">
             <div class="controls">
-              <button type="submit" class="btn btn-success">Submit</button>
+              <button name="submit" type="submit" class="btn btn-success">Submit</button>
             </div>
 
           </form>

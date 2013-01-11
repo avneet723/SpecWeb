@@ -65,7 +65,7 @@ $headers = 'From: '.$email_from."\r\n".
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-<title>Your Page Title</title>
+<title>Contact Form Submitted</title>
 <meta http-equiv="REFRESH" content="5;url=http://spectranslation.azurewebsites.net/"></HEAD>
 <BODY>
 Your request has been successfully submitted. We will get back to you soon! <br><br>
