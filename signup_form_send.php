@@ -73,7 +73,7 @@ $headers = 'From: '.$email_from."\r\n".
 <html>
 <head>
 <title>Signed Up!</title>
-<meta http-equiv="REFRESH" content="5;url=http://spectranslation.azurewebsites.net/"></HEAD>
+<meta http-equiv="REFRESH" content="5;url=http://www.spectranslations.com/"></HEAD>
 <BODY>
 Your request has been successfully submitted. We will get back to you soon! <br><br>
 You will now be redirected to the home page.
